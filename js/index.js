@@ -38,4 +38,8 @@ $(document).ready(function () {
         .addClass("__not-displayed-logo");
     }
   });
+
+
+  var bulp = $(".cls-1");
+  
 });

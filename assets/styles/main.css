@@ -71,6 +71,34 @@ hr {
   float: left;
   text-transform: uppercase;
 }
+.cls-1 {
+  fill: red;
+  animation-name: changeFill;
+  animation-duration: 4s;
+}
+@keyframes changeFill {
+  0% {
+    fill: #e6e000;
+  }
+  25% {
+    fill: #ffee00;
+  }
+  30% {
+    fill: red;
+  }
+  50% {
+    fill: #e6e000;
+  }
+  50% {
+    fill: #e6e000;
+  }
+  50% {
+    fill: #fdf985;
+  }
+  100% {
+    fill: #e6e000;
+  }
+}
 .__displayed-logo {
   display: unset;
   transition: 0.4s ease-in-out;
@@ -100,9 +128,6 @@ hr {
 }
 .show-menu-btn {
   float: right;
-}
-.show-menu-btn i {
-  line-height: 100px;
 }
 .menu a:hover,
 .show-menu-btn:hover,
@@ -137,6 +162,15 @@ hr {
 }
 .header div:nth-child(2) {
   margin-left: auto;
+  display: flex;
+}
+.header div:nth-child(2) label img {
+  margin-top: auto;
+  margin-bottom: auto;
+  height: 3px;
+}
+.header div:nth-child(2) label {
+  display: flex;
 }
 
 @media screen and (max-width: 800px) {
