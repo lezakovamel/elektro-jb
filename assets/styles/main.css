@@ -64,6 +64,7 @@ hr {
 .img-logo {
   height: 70px;
   display: none;
+  transition: 0.4s ease-in-out;
 }
 .logo {
   line-height: 100px;
@@ -71,10 +72,12 @@ hr {
   text-transform: uppercase;
 }
 .__displayed-logo {
-  display: visible !important;
+  display: unset;
+  transition: 0.4s ease-in-out;
 }
 .__not-displayed-logo {
   display: none !important;
+  transition: 0.4s ease-in-out;
 }
 
 .menu {
