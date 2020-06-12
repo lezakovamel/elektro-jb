@@ -262,6 +262,7 @@ svg {
   height: fit-content;
   width: fit-content;
   display: flex;
+  overflow-x: hidden;
 }
 .wrapper-about div {
   box-sizing: border-box;
@@ -281,6 +282,27 @@ svg {
   padding-right: 100px;
   max-width: 30%;
   text-align: center;
+  transition: all 400ms ease-in-out;
+}
+.__on-place {
+  transform: translateX(0%) translateY(0%);
+  opacity: 1;
+  transition: all 400ms ease-in-out;
+}
+.__from-left {
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: all 400ms ease-in-out;
+}
+.__from-right {
+  transform: translateX(50%);
+  opacity: 0;
+  transition: all 400ms ease-in-out;
+}
+.__from-bottom {
+  transform: translateY(50%);
+  opacity: 0;
+  transition: all 400ms ease-in-out;
 }
 
 .about-pic {
@@ -520,6 +542,7 @@ footer p {
     padding: 0;
     box-sizing: border-box;
     padding: 20px;
+    transition: 0.4 ease-in-out;
   }
   .about-pic {
     margin: auto;
