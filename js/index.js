@@ -39,7 +39,7 @@ $(document).ready(function () {
     var winBottom = winTop + $(window).height();
     var elTop = $el.offsetTop + $offsetPlus;
     var elBottom = elTop + $el.scrollHeight / 4;
-    return elBottom <= winBottom && elTop * 1.1 >= winTop;
+    return elBottom <= winBottom /*&& elTop * 1.1 >= winTop*/;
   }
 
   function slideItems($item) {
