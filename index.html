@@ -8,13 +8,42 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Elektro Bednařík</title>
+    <title>Elektromontáže Bednařík</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="./assets/styles/bootstrap.min.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/img/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/img/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/img/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="assets/img/favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#b91d47" />
+    <meta name="theme-color" content="#ffffff" />
 
     <link rel="stylesheet" href="./assets/styles/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"
+    />
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
@@ -28,22 +57,35 @@
     <script src="./js/bootstrap.bundle.min.js"></script>
 
     <script src="./js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
   </head>
   <body>
-    <div class="header">
+    <div class="header" id="nav">
       <div>
-        <img src="assets/img/logo.svg" alt="" class="img-logo" />
+        <img
+          src="assets/img/logo_white.svg"
+          alt=""
+          class="img-logo __displayed-logo"
+          id="white-logo"
+        />
+        <img
+          src="assets/img/logo.svg"
+          alt=""
+          id="colors-logo"
+          class="img-logo"
+        />
       </div>
       <div>
         <input type="checkbox" id="chk" />
         <label for="chk" class="show-menu-btn">
-          <i class="fas fa-ellipsis-h">...</i>
+          <img src="/assets/img/svg/three-dots.svg"></img>
         </label>
 
         <ul class="menu">
-          <a href="#">O mně</a>
-          <a href="#">Služby</a>
-          <a href="#">Kontakt</a>
+          <li><a href="#about">O mně</a></li>
+          <li><a href="#services">Služby</a></li>
+          <li><a href="#contact">Kontakt</a></li>
           <label for="chk" class="hide-menu-btn">
             <i class="fas fa-times">...</i>
           </label>
@@ -70,7 +112,9 @@
           <!-- Slide One - Set the background image for this slide in the line below -->
           <div
             class="carousel-item active"
-            style="background-image: url('https://mcgeheeelectricllc.com/images/background/bg03.jpg')"
+            style="
+              background-image: url('https://mcgeheeelectricllc.com/images/background/bg03.jpg');
+            "
           >
             <div class="carousel-caption d-none d-md-block">
               <h2 class="display-4">First Slide</h2>
@@ -80,7 +124,9 @@
           <!-- Slide Two - Set the background image for this slide in the line below -->
           <div
             class="carousel-item"
-            style="background-image: url('https://mk0rosebrothersxt62p.kinstacdn.com/wp-content/uploads/2018/01/AdobeStock_56957260.jpeg')"
+            style="
+              background-image: url('https://mk0rosebrothersxt62p.kinstacdn.com/wp-content/uploads/2018/01/AdobeStock_56957260.jpeg');
+            "
           >
             <div class="carousel-caption d-none d-md-block">
               <h2 class="display-4">Second Slide</h2>
@@ -90,7 +136,9 @@
           <!-- Slide Three - Set the background image for this slide in the line below -->
           <div
             class="carousel-item"
-            style="background-image: url('https://mcgeheeelectricllc.com/images/background/bg02.jpg')"
+            style="
+              background-image: url('https://mcgeheeelectricllc.com/images/background/bg02.jpg');
+            "
           >
             <div class="carousel-caption d-none d-md-block">
               <h2 class="display-4">Third Slide</h2>
@@ -119,21 +167,125 @@
       </div>
     </header>
     <main>
-      <!-- Page Content -->
-      <section class="py-5">
-        <div class="container">
-          <h1 class="display-4">Full Page Image Slider</h1>
-          <p class="lead">
-            The background images for the slider are set directly in the HTML
-            using inline CSS. The images in this snippet are from
-            <a href="https://unsplash.com">Unsplash</a>, taken by
-            <a href="https://unsplash.com/@joannakosinska">Joanna Kosinska</a>!
-          </p>
+      <section id="about" class="about">
+        <div class="wrapper-about">
+          <div class="text __from-left">
+            <h1>Jaroslav Bednařík</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+              non malesuada nunc. Praesent malesuada luctus imperdiet.
+              Pellentesque accumsan pulvinar felis et tincidunt. Aliquam erat
+              volutpat.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+              non malesuada nunc. Praesent malesuada luctus imperdiet.
+              Pellentesque accumsan pulvinar felis et tincidunt. Aliquam erat
+              volutpat.
+            </p>
+          </div>
+          <div class="about-pic"></div>
+        </div>
+      </section>
+      <section class="gallery">
+        <div class="gal">
+          <a href="/assets/img/fwwww/IMG_20200303_132833.jpg" class="image">
+            <img
+              src="/assets/img/fwwww/IMG_20200303_132833.jpg"
+              loading="lazy" /></a
+          ><a href="/assets/img/fwwww/IMG_20200303_132806.jpg" class="image">
+            <img
+              src="/assets/img/fwwww/IMG_20200303_132806.jpg"
+              loading="lazy" /></a
+          ><a href="/assets/img/fwwww/IMG_20200303_132751.jpg" class="image">
+            <img src="/assets/img/fwwww/IMG_20200303_132751.jpg" loading="lazy"
+          /></a>
+          <a href="/assets/img/fwwww/IMG_20200303_132740.jpg" class="image">
+            <img src="/assets/img/fwwww/IMG_20200303_132740.jpg"
+          /></a>
+
+          <a href="/assets/img/fwwww/IMG_20190815_145641.jpg" class="image">
+            <img src="/assets/img/fwwww/IMG_20190815_145641.jpg"
+          /></a>
+
+          <a href="/assets/img/fwwww/IMG_20190815_142923.jpg" class="image">
+            <img src="/assets/img/fwwww/IMG_20190815_142923.jpg"
+          /></a>
+
+          <a href="/assets/img/fwwww/IMG_20190619_161414.jpg" class="image"
+            ><img src="/assets/img/fwwww/IMG_20190619_161414.jpg" />
+          </a>
+
+          <a href="/assets/img/fwwww/IMG_20190430_170050.jpg" class="image"
+            ><img src="/assets/img/fwwww/IMG_20190430_170050.jpg"
+          /></a>
         </div>
       </section>
 
-      <section></section>
-      <section class="section-cut">
+      <section class="py-5" id="services">
+        <div class="container">
+          <h1>Služby</h1>
+
+          <div class="services-wrapper">
+            <div class="services-item"  id="si-0">
+              <h2>Elektromontáže</h2>
+              <hr />
+              <p>
+                Veškeré elektroinstalační práce. Dodávka staveb od nabídky po
+                revizi. Instalace bytů, domů, bytových domů, nebytových
+                prostor,administrativních budov, škol, hotelů a veškerých
+                průmyslových instalací, hromosvody, podlahové topení,
+                zabezpečovací systém, slaboproudé rozvody, dodávka materiálu
+              </p>
+              <p>
+                Veškeré elektroinstalační práce. Dodávka staveb od nabídky po
+                revizi. Instalace bytů, domů, bytových domů, nebytových
+                prostor,administrativních budov, škol, hotelů a veškerých
+                průmyslových instalací, hromosvody, podlahové topení,
+                zabezpečovací systém, slaboproudé rozvody, dodávka materiálu
+              </p>
+            </div>
+            <div class="services-item" id="si-1">
+              <h2>Jádrové vrtání</h2>
+              <hr />
+              <p>
+                Jádrové vrtání diamantovou technikou chlazené vodou do
+                stavebních konstrukcí (beton, železobeton, kámen, cihla, smíšené
+                zdivo, atd.) Vysoce přesné vrty s maximální eliminací otřesů a
+                vibrací. Jádrové vrtání od průměru 35 mm do 255 mm do libovolné
+                délky a úhlu.
+              </p>
+              <p>
+                Jádrové vrtání diamantovou technikou chlazené vodou do
+                stavebních konstrukcí (beton, železobeton, kámen, cihla, smíšené
+                zdivo, atd.) Vysoce přesné vrty s maximální eliminací otřesů a
+                vibrací. Jádrové vrtání od průměru 35 mm do 255 mm do libovolné
+                délky a úhlu.
+              </p>
+            </div>
+            <div class="services-item"  id="si-2">
+              <h2>Rekonstrukce</h2>
+              <hr />
+              <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                Pellentesque habitant morbi tristique senectus et netus et
+                malesuada fames ac turpis egestas. Nullam lectus justo,
+                vulputate eget mollis sed, tempor sed magna. Praesent id justo
+                in neque elementum ultrices. Integer in sapien.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                Pellentesque habitant morbi tristique senectus et netus et
+                malesuada fames ac turpis egestas. Nullam lectus justo,
+                vulputate eget mollis sed, tempor sed magna. Praesent id justo
+                in neque elementum ultrices. Integer in sapien.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-cut" id="contact">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 100 100"
@@ -148,8 +300,8 @@
           <h1>Kontakt</h1>
           <hr />
           <div class="contact-wrap">
-            <div class="contact-after">
-              <p>Jaroslav Bednařík</p>
+            <div>
+              <p style="font-weight: bold;">Jaroslav Bednařík</p>
               <p>Pozlovice 223</p>
               <p>Pozlovice 763 26</p>
 
@@ -161,44 +313,50 @@
               <p>jarous@bednarik.cz</p>
             </div>
             <div>
-              <div>
-                <h3>fakturační údaje</h3>
+              <h3>fakturační údaje</h3>
 
-                <p>IČ: XXXXXXX</p>
+              <p>IČ: XXXXXXX</p>
 
-                <p>DIČ: XXXXXX</p>
-              </div>
+              <p>DIČ: XXXXXX</p>
             </div>
           </div>
         </div>
-        <div class="where-to"><h1>Kde mě najít?</h1></div>
       </section>
     </main>
     <footer>
+      <div class="footer-rel">
+        <h1>Kde mě najdete?</h1>
+      </div>
       <div class="footer-rel">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20886.40426390488!2d17.758591358542645!3d49.1284233261413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47136fd4cb8505ed%3A0x400af0f6615af60!2s763%2026%20Pozlovice!5e0!3m2!1scs!2scz!4v1583608416066!5m2!1scs!2scz"
           width="100%"
           height="300"
           frameborder="0"
-          style="border:0;"
+          style="border: 0;"
           allowfullscreen=""
         ></iframe>
       </div>
       <div class="footer-main">
         <div>
           <div>
+            <h3>Moje služby</h3>
             <p>elektroinstalace</p>
             <p>jadrovka</p>
             <p>neco</p>
           </div>
         </div>
         <div>
-          <div>
-            <p>o mne</p>
-            <p>reference</p>
-            <p>kontakt</p>
+          <div class="footer-menu">
+            <h3>Menu</h3>
+            <a href="#about">O mně</a>
+            <a href="#services">Služby</a>
+            <a href="#references">Reference</a>
+            <a href="#contact">Kontakt</a>
           </div>
+        </div>
+        <div class="up">
+          <a href="#">Nahoru ↑</a>
         </div>
       </div>
       <div class="copyright">@ 2020 Melánie Ležáková</div>
@@ -213,10 +371,26 @@
 
     <!-- Latest compiled and minified JavaScript -->
 
-    <script src="./js/index.js"></script>
+    <script async defer src="./js/index.js"></script>
 
     <script src="./js/bootstrap.bundle.min.js"></script>
 
     <script src="./js/bootstrap.min.js"></script>
+    <script>
+      $(".gallery").magnificPopup({
+        delegate: "a",
+        type: "image",
+        gallery: {
+          enabled: true,
+        },
+      });
+      $(".demo").magnificPopup({
+        delegate: "a",
+        type: "image",
+        gallery: {
+          enabled: true,
+        },
+      });
+    </script>
   </body>
 </html>
