@@ -23,6 +23,10 @@ ul li {
   list-style-type: none;
   display: inline;
 }
+ul,
+label {
+  margin-bottom: 0;
+}
 a {
   color: #000;
 }
@@ -59,7 +63,11 @@ hr {
 .__none {
   background-color: rgba(255, 255, 255, 0) !important;
   transition: 0.4s ease-in-out;
+  color: white !important;
   height: 120px;
+}
+.__none ul li a {
+  color: white !important;
 }
 .img-logo {
   height: 70px;
@@ -109,8 +117,12 @@ hr {
 }
 
 .menu {
+  display: flex;
   float: right;
   line-height: 100px;
+}
+.menu li {
+  display: flex;
 }
 .menu a {
   color: #34495e;
@@ -118,6 +130,8 @@ hr {
   text-decoration: none;
   padding: 0 10px;
   transition: 0.4s;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 .show-menu-btn,
 .hide-menu-btn {
@@ -186,7 +200,6 @@ hr {
     right: -100%;
     top: 0;
     text-align: center;
-    padding: 80px 0;
     line-height: normal;
     transition: 0.7s;
   }
@@ -194,11 +207,11 @@ hr {
     display: block;
     padding: 20px;
   }
-  .hide-menu-btn {
+  /*.hide-menu-btn {
     position: absolute;
     top: 40px;
     right: 40px;
-  }
+  }*/
   #chk:checked ~ .menu {
     right: 0;
   }
@@ -471,6 +484,17 @@ footer p {
     font-size: small;
     color: white;
   }
+  .menu {
+    flex-direction: column;
+    padding: 25px 20px !important;
+  }
+  .menu label {
+    margin-left: auto;
+  }
+  .menu li a {
+    margin-left: auto;
+    margin-right: auto;
+  }
   .section-con {
     position: relative;
     min-height: 85vh;
@@ -589,6 +613,9 @@ footer p {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+  .menu {
+    flex-direction: row;
+  }
   .contact {
     width: 80vw;
   }

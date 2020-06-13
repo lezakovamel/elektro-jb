@@ -60,7 +60,7 @@ $(document).ready(function () {
     slideItems($(".services-item"), ".services-item");
     var y = $(this).scrollTop();
 
-    if (y > 750) {
+    if (y > 650) {
       $(".text").addClass("__on-place").removeClass("__from-left");
     } else {
       $(".text").addClass("__from-left").removeClass("__on-place");
