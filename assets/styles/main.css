@@ -325,7 +325,7 @@ section {
 .section-cut {
   position: relative;
   min-height: 60vh;
-  background-image: url(/assets/img/mocks/el.jpg),
+  background-image: url(/assets/img/gallery/section-cut.jpg),
     linear-gradient(#ff9d2f, #ff6126);
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -701,6 +701,9 @@ footer p {
   }
   .hide-menu-btn {
     display: none !important;
+  }
+  .section-cut {
+    background-position-y: -300px;
   }
 }
 
