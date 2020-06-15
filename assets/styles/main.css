@@ -60,15 +60,15 @@ hr {
   height: 100px;
   box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.233);
 }
+.__white div label img {
+  filter: brightness(0.5);
+}
 .__none {
   background-color: rgba(255, 255, 255, 0) !important;
   transition: 0.4s ease-in-out;
-  color: white !important;
   height: 120px;
 }
-.__none ul li a {
-  color: white !important;
-}
+
 .img-logo {
   height: 70px;
   display: none;
@@ -380,20 +380,24 @@ section:first-child {
 .services-item:nth-of-type(3) {
   background: rgb(13, 80, 100);
 }
+.ref {
+  box-sizing: border-box;
+  padding: 50px;
+}
 .ref-wrapper {
   margin-left: auto;
   margin-right: auto;
   display: flex;
-
   flex-direction: column;
 }
+
 .ref-logo {
   margin-left: auto;
   margin-right: auto;
   box-sizing: border-box;
   transition: 0.3s ease-in-out;
   cursor: pointer;
-
+  padding: 15px;
   max-width: calc(100% / 3);
   filter: grayscale(1);
 }
@@ -499,9 +503,6 @@ footer p {
 }
 .contact-wrap {
   display: flex;
-}
-.contact-wrap div:nth-child(2) h3 {
-  margin-top: 0;
 }
 .contact h3 {
   color: black;
@@ -645,7 +646,6 @@ footer p {
   .ref-logo {
     margin-top: auto;
     margin-left: auto;
-    padding: 10px;
   }
 }
 
@@ -701,10 +701,16 @@ footer p {
     margin-left: auto;
     margin-right: auto;
   }
+  .__none ul li a {
+    color: white !important;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+  .contact-wrap div:nth-child(2) h3 {
+    margin-top: 0;
+  }
   .wrapper-about .text {
     max-width: 50%;
   }
@@ -715,7 +721,7 @@ footer p {
     flex-direction: row;
   }
   .ref-logo {
-    padding: 10px;
+    padding: 40px;
 
     max-width: calc(100% / 5);
   }
