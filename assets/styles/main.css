@@ -716,6 +716,12 @@ footer p {
   .__none ul li a {
     color: white !important;
   }
+  .ref-logo {
+    max-width: calc(100% / 4);
+  }
+  .contact-wrap div:nth-child(2) h3 {
+    margin-top: 0;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -723,9 +729,8 @@ footer p {
   .img-logo {
     height: 70px;
   }
-
-  .contact-wrap div:nth-child(2) h3 {
-    margin-top: 0;
+  .__none {
+    height: 120px;
   }
   .wrapper-about .text {
     max-width: 50%;
