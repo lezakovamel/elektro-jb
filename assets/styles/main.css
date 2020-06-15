@@ -57,7 +57,7 @@ hr {
 .__white {
   background-color: white !important;
   transition: 0.4s ease-in-out;
-  height: 100px;
+  height: 70px;
   box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.233);
 }
 .__white div label img {
@@ -66,12 +66,12 @@ hr {
 .__none {
   background-color: rgba(255, 255, 255, 0) !important;
   transition: 0.4s ease-in-out;
-  height: 120px;
+  height: 100px;
 }
 
 .img-logo {
-  height: 70px;
   display: none;
+  height: 50px;
   transition: 0.4s ease-in-out;
 }
 .logo {
@@ -398,7 +398,7 @@ section:first-child {
   transition: 0.3s ease-in-out;
   cursor: pointer;
   padding: 15px;
-  max-width: calc(100% / 3);
+  max-width: calc(100% / 2.5);
   filter: grayscale(1);
 }
 .ref-logo:hover {
@@ -591,6 +591,9 @@ footer p {
   .footer-rel {
     width: 90%;
   }
+  .footer-menu h3 {
+    margin-top: 0 !important;
+  }
   .wrapper-about {
     flex-direction: column-reverse;
   }
@@ -611,6 +614,12 @@ footer p {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+  .__white > .img-logo {
+    height: 50px;
+  }
+  .__none ~ .img-logo {
+    height: 70px;
+  }
   .wrapper-about .text {
     max-width: fit-content;
     margin: auto;
@@ -656,6 +665,9 @@ footer p {
   }
   .contact {
     width: 80vw;
+  }
+  .__white {
+    height: 100px;
   }
   .footer-main {
     flex-direction: row;
@@ -708,6 +720,10 @@ footer p {
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+  .img-logo {
+    height: 70px;
+  }
+
   .contact-wrap div:nth-child(2) h3 {
     margin-top: 0;
   }
